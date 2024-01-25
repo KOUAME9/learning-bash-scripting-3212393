@@ -14,7 +14,7 @@ echo {1..10}
 echo {10..1}
 echo {01..10}
 echo {01..100}
-{echo a..z}
+echo {a..z}
 echo {Z..A}
 echo {1..30..3}
 echo {a..z..2}

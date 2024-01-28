@@ -456,7 +456,7 @@ greet Everybody Evening
 
 numberthing() {
     declare -i i=1
-    for f in $@; do
+    for f in "$@"; do
         echo "$i: $f"
         (( i += 1 ))
     done

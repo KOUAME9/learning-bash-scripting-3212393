@@ -528,7 +528,7 @@ echo "Argument 2 is $2"
 ```bash
 #!/usr/bin/env bash
 
-for i in $@
+for i in "$@"
 do
     echo $i
 done
@@ -537,7 +537,7 @@ done
 ```bash
 #!/usr/bin/env bash
 
-for i in $@
+for i in "$@"
 do
     echo $i
 done
@@ -624,10 +624,11 @@ echo "Which animal"
 select animal in "bird" "dog" "quit"
 do
     case $animal in
-        bird) echo "Birds like to fly.":;
+        bird) echo "Birds like to fly.";;
         dog) echo "Dogs like to play catch.";;
         quit) break;;
         *) echo "I'm not sure what that is.";;
+    esac
 done
 ```
 
